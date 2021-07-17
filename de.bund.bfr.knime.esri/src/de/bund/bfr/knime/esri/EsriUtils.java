@@ -26,7 +26,7 @@ import org.knime.core.data.DataTableSpec;
 import org.knime.core.node.InvalidSettingsException;
 import org.knime.core.node.defaultnodesettings.SettingsModelString;
 import org.knime.core.util.FileUtil;
-import org.locationtech.jts.algorithm.CGAlgorithms;
+import org.locationtech.jts.algorithm.Orientation;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.GeometryCollection;
@@ -156,14 +156,14 @@ public class EsriUtils {
 	private static Polygon adjustOrientation(Polygon polygon) {
 		LinearRing shell = (LinearRing) polygon.getExteriorRing();
 
-		if (!CGAlgorithms.isCCW(shell.getCoordinates())) {
+		if (!Orientation.isCCW(shell.getCoordinates())) {
 			shell = (LinearRing) shell.reverse();
 		}
 
 		List<LinearRing> holes = new ArrayList<>();
 
 		for (LinearRing hole : getHoles(polygon)) {
-			if (CGAlgorithms.isCCW(hole.getCoordinates())) {
+			if (Orientation.isCCW(hole.getCoordinates())) {
 				hole = (LinearRing) hole.reverse();
 			}
 
@@ -350,7 +350,7 @@ public class EsriUtils {
 	}
 
 	private static LinearRing combine(LinearRing shell, LinearRing hole, Coordinate c) {
-		if (CGAlgorithms.isCCW(shell.getCoordinates()) == CGAlgorithms.isCCW(hole.getCoordinates())) {
+		if (Orientation.isCCW(shell.getCoordinates()) == Orientation.isCCW(hole.getCoordinates())) {
 			hole = (LinearRing) hole.reverse();
 		}
 

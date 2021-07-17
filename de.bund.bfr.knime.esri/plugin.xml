@@ -3,10 +3,10 @@
 <plugin>
    
 <extension point="org.knime.workbench.repository.nodes">
-	<node category-path="/community/esri" factory-class="de.bund.bfr.knime.esri.polygonreader.PolygonReaderNodeFactory" id="de.bund.bfr.knime.esri.polygonreader.PolygonReaderNodeFactory"/>
-	<node category-path="/community/esri" factory-class="de.bund.bfr.knime.esri.pointreader.PointReaderNodeFactory" id="de.bund.bfr.knime.esri.pointreader.PointReaderNodeFactory"/>
-	<node category-path="/community/esri" factory-class="de.bund.bfr.knime.esri.polygonproperties.PolygonPropertiesNodeFactory" id="de.bund.bfr.knime.esri.polygonproperties.PolygonPropertiesNodeFactory"/>
-	<node category-path="/community/esri" factory-class="de.bund.bfr.knime.esri.rowfilter.CoordinateRowFilterNodeFactory" id="de.bund.bfr.knime.esri.rowfilter.CoordinateRowFilterNodeFactory"/>
+	<node category-path="/community/esri" factory-class="de.bund.bfr.knime.esri.polygonreader.PolygonReaderNodeFactory"/>
+	<node category-path="/community/esri" factory-class="de.bund.bfr.knime.esri.pointreader.PointReaderNodeFactory"/>
+	<node category-path="/community/esri" factory-class="de.bund.bfr.knime.esri.polygonproperties.PolygonPropertiesNodeFactory"/>
+	<node category-path="/community/esri" factory-class="de.bund.bfr.knime.esri.rowfilter.CoordinateRowFilterNodeFactory"/>
 </extension>
 
 <extension point="org.knime.workbench.repository.categories">
