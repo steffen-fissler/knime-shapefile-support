@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry exported="true" kind="lib" path="lib/jt-jiffle-language-1.1.20.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/ejml-core-0.34.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/si-quantity-2.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/indriya-2.1.2.jar"/>
@@ -49,8 +50,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/gt-elasticsearch-25.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/gt-epsg-extension-25.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/gt-epsg-hsql-25.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/gt-epsg-postgresql-25.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/gt-epsg-wkt-25.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/gt-feature-pregeneralized-25.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/gt-flatgeobuf-25.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/gt-geobuf-25.1.jar"/>
