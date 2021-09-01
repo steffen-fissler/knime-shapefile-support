@@ -816,3 +816,4 @@ Export-Package: org.geotools,
  org.opengis.style,
  org.opengis.temporal,
  org.opengis.util
+Automatic-Module-Name: org.geotools

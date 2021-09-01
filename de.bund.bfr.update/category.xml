@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="de.bund.bfr.knime.esri.feature" version="0.0.0">
+       <category name="bfr-esri" />
+   </feature>
+   <feature id="de.bund.bfr.knime.esri.feature.source" version="0.0.0">
+       <category name="bfr-esri" />
+   </feature>
+
+   <category-def name="bfr-esri" label="Build artifacts from bund-esri">
+       <description>Build artifacts from bund-esri</description>
+   </category-def>
+</site>
