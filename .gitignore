@@ -1,1 +1,4 @@
 bin
+target/
+.polyglot..META-INF_MANIFEST.MF
+.polyglot.feature.xml.takari_issue_192
