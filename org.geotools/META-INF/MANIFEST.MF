@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Geotools
 Bundle-SymbolicName: org.geotools
 Bundle-Version: 25.1.0.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Vendor: OSGeo Project
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: lib/ant-1.10.9.jar,
